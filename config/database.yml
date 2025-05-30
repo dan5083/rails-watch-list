@@ -72,5 +72,7 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-#  production:
+
+production:
+  <<: *default
   url: <%= ENV['DATABASE_URL'] %>
